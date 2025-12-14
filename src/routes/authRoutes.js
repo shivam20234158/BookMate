@@ -39,6 +39,7 @@ router.post("/login",async (req,res)=>{
                 username:user.username,
                 email:user.email,
                 profileImage:user.profileImage,
+                createdAt:user.createdAt,
             },
         })
     }
@@ -95,6 +96,7 @@ router.post("/register",async (req,res)=>{
                 username:newUser.username,
                 email:newUser.email,
                 profileImage:newUser.profileImage,
+                createdAt:newUser.createdAt,
             },
         });
     }
